@@ -1,0 +1,6 @@
+{
+  "name": "IFFF-Teaching-Lesson-Plans",
+  "dependencies": {
+    "foundation": "~5.4.7"
+  }
+}

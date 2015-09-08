@@ -3,3 +3,4 @@ raw/*
 .sass-cache/*
 node_modules/*
 fonts/webfontkit*
+bower_components/*
