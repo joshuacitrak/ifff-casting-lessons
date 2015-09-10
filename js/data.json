@@ -1,0 +1,34 @@
+{
+    "title": "PICK UP and LAY DOWN (PULD) CAST INSTRUCTIONS",
+    "content": [
+        {
+            "header": "Allow approximately 7 minutes."
+        },
+        {
+            "orderedlist": [
+                {
+                    "listitem": "Introduction to cast."
+                },
+                {
+                    "listitem": "Instructor describes the cast.",
+                    "orderedlist": [
+                        {
+                            "listitem": "The cast consists of a single back cast and a single forward cast, beginning and ending with the line on the water.  It is the starting point for learning all overhead casts."
+                        }
+                    ]
+                },
+                {
+                    "listitem": "Instructor states purposes of the PULD cast.",
+                    "orderedlist": [
+                        {
+                            "listitem": "The purpose of the cast is to teach rod loading and unloading, the pause length between back cast and forward cast, and how to control the size of the loops."
+                        },
+                        {
+                            "listitem": "In fishing this cast achieves greater accuracy than the roll cast and allows the quick and efficient repositioning of the fly on the water."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

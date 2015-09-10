@@ -1166,7 +1166,158 @@ ul.off-canvas-list {
   margin-right: .5rem;
   display: inline; }
 
+/**
+--------------PALLET 1 light to X dark
+**/
+/**---------------SUSY-------------------------- **/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'SinkinSansLt';
+  src: url("../../web_fonts/sinkinsans_200xlight_macroman/SinkinSans-200XLight-webfont.eot");
+  src: url("../../web_fonts/sinkinsans_200xlight_macromn/SinkinSans-200XLight-webfont.eot?iefix") format("eot"), url("../../web_fonts/sinkinsans_200xlight_macroman/SinkinSans-200XLight-webfont.woff") format("woff"), url("../../web_fonts/sinkinsans_200xlight_macroman/SinkinSans-200XLight-webfont.ttf") format("truetype"), url("../../web_fonts/sinkinsans_200xlight_macroman/SinkinSans-200XLight-webfont.svg#webfont") format("svg"); }
+@font-face {
+  font-family: 'SinkinSansRg';
+  src: url("../../web_fonts/sinkinsans_400regular_macroman/SinkinSans-400regular-webfont.eot");
+  src: url("../../web_fonts/sinkinsans_400regular_macromn/SinkinSans-400regular-webfont.eot?iefix") format("eot"), url("../../web_fonts/sinkinsans_400regular_macroman/SinkinSans-400regular-webfont.woff") format("woff"), url("../../web_fonts/sinkinsans_400regular_macroman/SinkinSans-400regular-webfont.ttf") format("truetype"), url("../../web_fonts/sinkinsans_400regular_macroman/SinkinSans-400regular-webfont.svg#webfont") format("svg"); }
+@font-face {
+  font-family: 'SinkinSansRgIt';
+  src: url("../../web_fonts/sinkinsans_400Italic_macroman/SinkinSans-400Italic-webfont.eot");
+  src: url("../../web_fonts/sinkinsans_400Italic_macromn/SinkinSans-400Italic-webfont.eot?iefix") format("eot"), url("../../web_fonts/sinkinsans_400Italic_macroman/SinkinSans-400Italic-webfont.woff") format("woff"), url("../../web_fonts/sinkinsans_400Italic_macroman/SinkinSans-400Italic-webfont.ttf") format("truetype"), url("../../web_fonts/sinkinsans_400Italic_macroman/SinkinSans-400Italic-webfont.svg#webfont") format("svg"); }
+@font-face {
+  font-family: 'SinkinSansSemiBold';
+  src: url("../../web_fonts/sinkinsans_600semibold_macroman/SinkinSans-600semibold-webfont.eot");
+  src: url("../../web_fonts/sinkinsans_600semibold_macromn/SinkinSans-600semibold-webfont.eot?iefix") format("eot"), url("../../web_fonts/sinkinsans_600semibold_macroman/SinkinSans-600semibold-webfont.woff") format("woff"), url("../../web_fonts/sinkinsans_600semibold_macroman/SinkinSans-600semibold-webfont.ttf") format("truetype"), url("../../web_fonts/sinkinsans_600semibold_macroman/SinkinSans-600semibold-webfont.svg#webfont") format("svg"); }
+/**
+GLOBAL
+ELEMENTS
+    INLINE
+    BLOCK
+    SELECTORS
+CONTAINERS
+UTILITIES 
+**/
+/**-------------- GLOBAL --------------------**/
 body {
-  font-size: 16px;
-  background: #123456;
-  color: #efefef; }
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: 'SinkinSansLt', sans-serif;
+  background: #fafafa;
+  color: #d4d4d4;
+  line-height: 1; }
+
+/**-------------- ELEMENTS --------------------**/
+/**-------INLINE ---------**/
+h1,
+h2,
+h3,
+h4 {
+  text-rendering: optimizeLegibility; }
+
+h1,
+h2 {
+  font-family: 'SinkinSansSemiBold', serif; }
+
+h1 {
+  font-size: 57.59px;
+  font-size: 5.759rem; }
+
+h2 {
+  text-decoration: underline; }
+
+h2,
+h3,
+h4 {
+  font-size: 26.18px;
+  font-size: 2.618rem;
+  line-height: 1.359; }
+
+h3 {
+  font-weight: bold; }
+
+p {
+  line-height: .8; }
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside; }
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside; }
+
+ol, ul {
+  padding-bottom: 5px; }
+  ol:last-child, ul:last-child {
+    padding-bottom: 0px; }
+
+ul ul, ol ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 21px; }
+
+ol ol, ul ol {
+  list-style-type: lower-latin;
+  list-style-position: inside;
+  margin-left: 21px; }
+
+ol ol ol, ul ol ol {
+  list-style-type: lower-roman;
+  list-style-position: inside;
+  margin-left: 21px; }
+
+li {
+  padding-bottom: 5px; }
+  li:last-child {
+    padding-bottom: 0px; }
+
+p, ul, ol, li {
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-family: 'SinkinSansLt', sans-serif;
+  color: #2b2b2b; }
+
+a {
+  color: #4c9dbf;
+  transition: color 0.35s ease-out; }
+  a:hover {
+    color: #11b252; }
+
+li > a {
+  transition: color 0.35s ease-out; }
+  li > a:hover, li > a:focus, li > a:active {
+    color: #11b252 !important; }
+
+/**-----BLOCK-----**/
+section {
+  margin: 0 15px 15px 15px; }
+
+button {
+  font-family: 'SinkinSansLt', sans-serif;
+  padding: 5px 10px 5.31px 1px;
+  padding: .5rem 1rem .53125rem 1rem;
+  background-color: #4c9dbf;
+  border-color: #66d2ff; }
+  button:hover, button:focus, button:active {
+    background-color: #11b252;
+    border-color: #015531; }
+
+/**-----------SELECTORS----------**/
+p.emphasize {
+  font-family: 'SinkinSansRg', sans-serif;
+  color: #015531; }
+
+button.disabled {
+  background-color: #d4d4d4;
+  border-color: #adadad; }
+  button.disabled:hover, button.disabled:focus, button.disabled:active {
+    background-color: #d4d4d4;
+    border-color: #adadad; }
+
+/**-------------- CONTAINERS --------------------**/
+.inner-wrap {
+  height: 100%;
+  min-height: 320px; }

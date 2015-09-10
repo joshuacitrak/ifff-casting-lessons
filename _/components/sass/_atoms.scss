@@ -1,6 +1,154 @@
-body
+/**
+GLOBAL
+ELEMENTS
+    INLINE
+    BLOCK
+    SELECTORS
+CONTAINERS
+UTILITIES 
+**/
+/**-------------- GLOBAL --------------------**/
+
+body {
+    font-size: 18px;
+    font-size:1.8rem;
+    font-family:'SinkinSansLt', sans-serif;
+  @include background($white);
+  color:$grey2;
+    line-height: 1;
+}
+/**-------------- ELEMENTS --------------------**/
+/**-------INLINE ---------**/
+h1,
+h2,
+h3,
+h4 {
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2 {
+    font-family: 'SinkinSansSemiBold', serif;
+}
+
+h1 {
+    font-size: 57.59px;
+    font-size: 5.759rem;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h2,
+h3,
+h4 {
+    font-size: 26.18px;
+    font-size: 2.618rem;
+    line-height: 1.359
+}
+
+h3 {
+    font-weight: bold;
+}
+
+p {
+     line-height:.8;
+}
+
+ul { 
+   list-style-type: disc; 
+   list-style-position: inside; 
+}
+ol { 
+   list-style-type: decimal; 
+   list-style-position: inside; 
+}
+ol, ul{
+    padding-bottom: 5px;
+    &:last-child{
+        padding-bottom:0px;
+    }
+}
+ul ul, ol ul { 
+   list-style-type: circle; 
+   list-style-position: inside; 
+   margin-left: 21px; 
+}
+ol ol, ul ol { 
+   list-style-type: lower-latin; 
+   list-style-position: inside; 
+   margin-left: 21px; 
+}
+ol ol ol, ul ol ol { 
+   list-style-type: lower-roman; 
+   list-style-position: inside; 
+   margin-left: 21px; 
+}
+li{
+    padding-bottom: 5px;
+    &:last-child{
+        padding-bottom:0px;
+    }
+}
+
+p, ul, ol, li{
+    font-size:15px;
+    font-size: 1.5rem;
+     font-family:'SinkinSansLt', sans-serif;
+    color:$black;
+}
+a{
+    color:$blue3;
+    @include single-transition(color, .35s);
+    &:hover{
+        color:$green1;
+    }
+}
+li>a{
+    @include single-transition(color, .35s);
+    &:hover, &:focus, &:active{
+        color:$green1!important;
+    }
+}
+/**-----BLOCK-----**/
+section{
+    margin:0 15px 15px 15px;
+}
+
+button{
+    font-family:'SinkinSansLt', sans-serif;
+    padding:5px 10px 5.31px 1px;
+    padding:.5rem 1rem .53125rem 1rem;
+    background-color:$blue3;
+    border-color:$blue1;
+    &:hover, &:focus, &:active{
+        background-color:$green1;
+        border-color:$green2;
+    }
+}
+
+/**-----------SELECTORS----------**/
+p.emphasize
 {
-  font-size: 16px;
-  @include background(#123456);
-  color:$white;
+    font-family:'SinkinSansRg', sans-serif;
+    color:$green2;
+}
+
+button.disabled
+{
+    background-color:$grey2;
+    border-color:$grey3;
+    &:hover, &:focus, &:active{
+        background-color:$grey2;
+    border-color:$grey3;
+    }
+}
+
+
+/**-------------- CONTAINERS --------------------**/
+.inner-wrap
+{
+    height:100%;
+    min-height: 320px;
 }
