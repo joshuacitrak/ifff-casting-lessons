@@ -13,7 +13,7 @@ body {
     font-size: 18px;
     font-size:1.8rem;
     font-family:'SinkinSansLt', sans-serif;
-  @include background($white);
+  @include background($grey1);
   color:$grey2;
     line-height: 1;
 }
@@ -38,6 +38,7 @@ h1 {
 
 h2 {
     text-decoration: underline;
+    text-align: center;
 }
 
 h2,
@@ -76,12 +77,17 @@ ul ul, ol ul {
    margin-left: 21px; 
 }
 ol ol, ul ol { 
-   list-style-type: lower-latin; 
+   list-style-type: upper-latin; 
    list-style-position: inside; 
    margin-left: 21px; 
 }
 ol ol ol, ul ol ol { 
-   list-style-type: lower-roman; 
+   list-style-type: upper-roman; 
+   list-style-position: inside; 
+   margin-left: 21px; 
+}
+ol ol ol ol, ul ol ol ol{ 
+   list-style-type: lower-latin; 
    list-style-position: inside; 
    margin-left: 21px; 
 }
@@ -145,10 +151,23 @@ button.disabled
     }
 }
 
+a.disabled{
+    color:$grey2;
+    cursor: default;
+      &:hover, &:focus, &:active{
+       color:$grey2;
+    }
+}
+
 
 /**-------------- CONTAINERS --------------------**/
 .inner-wrap
 {
     height:100%;
     min-height: 320px;
+}
+
+.tab-bar
+{
+    margin-bottom:21px;
 }

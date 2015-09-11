@@ -16,7 +16,7 @@ gulp.task('images', function(cb) {
 gulp.task('compressjs', function() {  
 	gulp.src('_/components/js/*.js')    
 	.pipe(uglify())    
-	.pipe(gulp.dest('js'));
+	.pipe(gulp.dest('_/js'));
 });
 
 gulp.task('compass', function() {  
