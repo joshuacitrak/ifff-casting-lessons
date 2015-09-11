@@ -10,6 +10,8 @@ var app = angular.module('myApp', [ 'ngRoute', 'appControllers' ]).config(router
 			templateUrl : 'partials/shootingline.html'
 		}).when('/quickcast', {
 			templateUrl : 'partials/quickcast.html'
+		}).when('/tuckcast', {
+			templateUrl : 'partials/tuckcast.html'
 		}).otherwise({
 			redirectTo : '/puld'
 		});

@@ -15,7 +15,7 @@ gulp.task('images', function(cb) {
 
 gulp.task('compressjs', function() {  
 	gulp.src('_/components/js/*.js')    
-	.pipe(uglify())    
+	.pipe(uglify({ mangle: false }))    
 	.pipe(gulp.dest('_/js'));
 });
 
